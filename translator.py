@@ -24,7 +24,7 @@ fs = gridfs.GridFS(db)  # Use GridFS for audio file storage
 collection = db['audio_transcripts']  # Collection for text documents
 
 # Create the "translator" folder if it doesn't exist
-translator_folder = "Path_to_Store_your_Audio_&_txt_file."
+translator_folder = "Add directory path of translator folder according to your device."
 os.makedirs(translator_folder, exist_ok=True)
 
 # File paths for saving audio and text

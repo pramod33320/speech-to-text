@@ -15,7 +15,7 @@ recognizer = sr.Recognizer()
 translator = googletrans.Translator()
 
 # MongoDB connection
-MONGO_URI = "mongodb+srv://rohitsingh692004:gItvbSL4gGwtlXEb@cluster0.tac6wmj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_URI = "YOUR_MONGO_URI"
 client = MongoClient(MONGO_URI)
 
 # Connect to MongoDB using the URI
@@ -24,7 +24,7 @@ fs = gridfs.GridFS(db)  # Use GridFS for audio file storage
 collection = db['audio_transcripts']  # Collection for text documents
 
 # Create the "translator" folder if it doesn't exist
-translator_folder = "C:\\Users\\PRAMOD MAHTO\\OneDrive\\Desktop\\speech to text\\translator"
+translator_folder = "Path_to_Store_your_Audio_&_txt_file."
 os.makedirs(translator_folder, exist_ok=True)
 
 # File paths for saving audio and text
